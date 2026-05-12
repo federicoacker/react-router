@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function Header() {
     return (
-        <header>
+        <header data-bs-theme="dark">
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand >

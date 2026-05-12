@@ -17,3 +17,8 @@ body{
 .ad-wrapper{
   width: 20%;
 }
+
+.disclaimer{
+  max-height:250px;
+  overflow-y:auto;
+}
