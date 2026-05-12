@@ -3,25 +3,25 @@ import { useState, useEffect } from "react";
 const adSrcArray = [
     {
         id: 0,
-        src: "imgs/ad1.png"
+        src: "\\./imgs/ad1.png"
     },
     {
         id: 1,
-        src: "imgs/ad2.png"
+        src: "\\./imgs/ad2.png"
     },
     {
         id: 2,
-        src: "imgs/ad3.png"
+        src: "\\./imgs/ad3.png"
     },
     {
         id: 3,
-        src: "imgs/ad4.png"
+        src: "\\./imgs/ad4.png"
     }
 ]
 
 function Ad({starterIndex = 0}) {
     const [adSrcID, setAdSrcID] = useState(starterIndex);
-
+    
     useEffect(() => {
         const intervalID = setInterval(
             () => {
@@ -36,8 +36,9 @@ function Ad({starterIndex = 0}) {
             }
         )
     })
-
+    
     const adSrc = adSrcArray.find((element) => element.id === adSrcID).src;
+    console.log(adSrc)
     return (
         <img key={adSrcID} src={adSrc} className="img-fluid" />
     )

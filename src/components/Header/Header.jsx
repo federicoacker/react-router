@@ -8,7 +8,7 @@ function Header() {
                 <Container>
                     <Navbar.Brand className="brand-logo">
                         <Link to="/" className="text-decoration-none">
-                            <img src="imgs/Logo.png" className="img-fluid rounded-circle"></img>
+                            <img src="\./imgs/Logo.png" className="img-fluid rounded-circle"></img>
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="site-navbar" />
