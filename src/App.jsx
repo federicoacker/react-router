@@ -4,6 +4,7 @@ import PageLayout from "./layout/PageLayout";
 import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
 import Index from "./pages/Index";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index Component={Index}/>
         <Route path="about-us" Component={AboutUs} />
         <Route path="products" Component={Products} />
+        <Route path="products/product/:id" Component={ProductPage} />
         <Route path="*" Component={PageNotFound} />
       </Route>
     </Routes>

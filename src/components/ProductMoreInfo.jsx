@@ -1,10 +1,13 @@
-import { Card, Col } from "react-bootstrap";
-import { Link } from "react-router";
-
-function Product({ title, description, price, category, image, id }) {
+import { Card, Container } from "react-bootstrap"
+import { Link } from "react-router"
+function ProductMoreInfo({ title, image, description, price, category }) {
     return (
-        <Col xs={12} md={6} lg={4}>
-            <Link className="text-decoration-none" to={`product/${id}`}>
+        <Container>
+            <div className="text-center">
+            <Link className="text-decoration-none text-danger bg-warning px-4 py-2 rounded text-center d-inline-block " 
+            to="/products">
+            Ritorna agli altri prodotti!</Link>
+            </div>
             <Card className="product-card" data-bs-theme="dark">
                 <Card.Header>
                     <Card.Title className="product-title">{title}</Card.Title>
@@ -24,9 +27,8 @@ function Product({ title, description, price, category, image, id }) {
                     </Card.Text>
                 </Card.Footer>
             </Card>
-            </Link>
-        </Col>
+        </Container>
     )
 }
 
-export default Product
+export default ProductMoreInfo
