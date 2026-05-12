@@ -10,15 +10,40 @@
   componenti. Per stili specifici di un singolo componente è preferibile
   usare un CSS Module (es. `NomeComponente.module.css`).
 */
-body{
-  color:white;
+body {
+  color: white;
 }
 
-.ad-wrapper{
-  width: 20%;
+.ad-wrapper {
+  width: 0;
+  padding: 0 !important;
+  border: none !important;
 }
 
-.disclaimer{
-  max-height:250px;
-  overflow-y:auto;
+.disclaimer {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.hero-title {
+  color: #f8fb63;
+}
+.hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+@media screen and (min-width: 992px) {
+  .ad-wrapper {
+    width: 20%;
+    padding:0.5rem !important;
+    border: 1px solid white !important; 
+  }
 }
