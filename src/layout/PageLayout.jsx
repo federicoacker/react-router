@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
-import Header from "../Header/Header.jsx";
-import Footer from "../Footer/Footer.jsx";
-import Ad from "../Ad.jsx";
+import Header from "../components/Header/Header.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import Ad from "../components/Ad.jsx";
 
 function PageLayout() {
     return (

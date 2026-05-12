@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router";
-import PageNotFound from "./components/pages/PageNotFound";
-import PageLayout from "./components/layout/PageLayout";
-import Products from "./components/pages/Products";
-import AboutUs from "./components/pages/AboutUs";
-import Index from "./components/pages/Index";
+import PageNotFound from "./pages/PageNotFound";
+import PageLayout from "./layout/PageLayout";
+import Products from "./pages/Products";
+import AboutUs from "./pages/AboutUs";
+import Index from "./pages/Index";
 
 function App() {
   return (
