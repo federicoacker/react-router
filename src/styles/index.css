@@ -29,6 +29,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
+  z-index:999;
 }
 .brand-logo{
   max-width: 60px;
@@ -43,10 +44,17 @@ body {
   object-position: 0 50%;
 }
 
+main{
+  width:100%;
+}
+
 @media screen and (min-width: 992px) {
   .ad-wrapper {
     width: 20%;
     padding:0.5rem !important;
     border: 1px solid white !important; 
+  }
+  main{
+    width: 60%;
   }
 }
