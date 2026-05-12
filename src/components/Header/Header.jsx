@@ -6,8 +6,10 @@ function Header() {
         <header data-bs-theme="dark" className="main-header">
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
-                    <Navbar.Brand >
-                        <Link to="/" className="text-decoration-none">Logo</Link>
+                    <Navbar.Brand className="brand-logo">
+                        <Link to="/" className="text-decoration-none">
+                        <img src="imgs/Logo.png" className="img-fluid rounded-circle"></img>
+                        </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="site-navbar" />
                     <Navbar.Collapse id="site-navbar">
