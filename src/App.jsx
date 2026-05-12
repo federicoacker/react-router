@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router";
+import PageNotFound from "./components/pages/PageNotFound";
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <Route index/>
       <Route path="about-us"/>
       <Route path="products"/>
+      <Route path="*" Component={PageNotFound}/>
     </Routes>
   );
 }
