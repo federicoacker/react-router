@@ -72,6 +72,17 @@ main{
   text-transform:capitalize;
 }
 
+.navlink-active-class{
+  border-radius:15px;
+  background-color:var(--bs-warning);
+  color:var(--bs-danger);
+}
+.navling-pending-class{
+  border-radius:15px;
+  background-color:var(--bs-danger);
+  color:var(--bs-warning);
+}
+
 @media screen and (min-width: 992px) {
   .ad-wrapper {
     width: 20%;

@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 function Header() {
     return (
@@ -14,9 +14,33 @@ function Header() {
                     <Navbar.Toggle aria-controls="site-navbar" />
                     <Navbar.Collapse id="site-navbar">
                         <Nav className="me-auto">
-                            <Link to="/" className="text-decoration-none">Home</Link>
-                            <Link to="about-us" className="text-decoration-none">Chi Siamo?</Link>
-                            <Link to="products" className="text-decoration-none">I Nostri Prodotti</Link>
+                            <NavLink to="/"
+                                className=
+                                {({ isActive, isPending }) =>
+                                    isActive ? "navlink-active-class text-decoration-none px-2" :
+                                        isPending ? "navlink-pending-class text-decoration-none px-2" :
+                                            "text-decoration-none px-2"
+                                }>
+                                Home
+                            </NavLink>
+                            <NavLink to="about-us"
+                                className=
+                                {({ isActive, isPending }) =>
+                                    isActive ? "navlink-active-class text-decoration-none px-2" :
+                                        isPending ? "navlink-pending-class text-decoration-none px-2" :
+                                            "text-decoration-none px-2"
+                                }>
+                                Chi Siamo?
+                            </NavLink>
+                            <NavLink to="products"
+                                className=
+                                {({ isActive, isPending }) =>
+                                    isActive ? "navlink-active-class text-decoration-none px-2" :
+                                        isPending ? "navlink-pending-class text-decoration-none px-2" :
+                                            "text-decoration-none px-2"
+                                }>
+                                I Nostri Prodotti
+                            </NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

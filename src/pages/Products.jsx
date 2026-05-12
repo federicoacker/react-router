@@ -7,7 +7,7 @@ function Products() {
     const { data, loadingError, loaded } = useFetch(API_URL);
 
     return (
-        <Container>
+        <Container className="py-5">
             <Row className="row-gap-2">
                 {
                     (loaded && !loadingError) &&
