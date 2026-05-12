@@ -19,7 +19,7 @@ const adSrcArray = [
     }
 ]
 
-function Ad({starterIndex}) {
+function Ad({starterIndex = 0}) {
     const [adSrcID, setAdSrcID] = useState(starterIndex);
 
     useEffect(() => {
