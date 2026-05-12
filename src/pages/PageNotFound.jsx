@@ -1,7 +1,9 @@
 
 function PageNotFound() {
   return (
-    <div>PageNotFound</div>
+    <div className="d-flex flex-column justify-content-between align-items-center">
+      <h1>404 - La Pagina Che Stai Cercando Si E' Persa O Forse Sei Tu Ad Essere Un Coglione E Aver Digitato L'indirizzo Sbagliato</h1>
+    </div>
   )
 }
 
