@@ -87,6 +87,10 @@ main{
   font-size: 250px;
 }
 
+.arrow{
+  font-size: 60px;
+}
+
 @media screen and (min-width: 992px) {
   .ad-wrapper {
     width: 20%;

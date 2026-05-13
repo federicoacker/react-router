@@ -3,11 +3,6 @@ import { Link } from "react-router"
 function ProductMoreInfo({ title, image, description, price, category }) {
     return (
         <Container>
-            <div className="text-center">
-            <Link className="text-decoration-none text-danger bg-warning px-4 py-2 rounded text-center d-inline-block " 
-            to="/products">
-            Ritorna agli altri prodotti!</Link>
-            </div>
             <Card className="product-card" data-bs-theme="dark">
                 <Card.Header>
                     <Card.Title className="product-title">{title}</Card.Title>
