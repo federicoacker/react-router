@@ -1,10 +1,10 @@
 import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router";
 
-function Product({ title, description, price, category, image, id }) {
+function Product({ title, description, price, category, image, id, previous, next, max, min }) {
     return (
         <Col xs={12} md={6} lg={4}>
-            <Link className="text-decoration-none" to={`${id}`}>
+            <Link className="text-decoration-none" to={`${id}/${previous}/${next}/${max}/${min}`}>
             <Card className="product-card" data-bs-theme="dark">
                 <Card.Header>
                     <Card.Title className="product-title">{title}</Card.Title>

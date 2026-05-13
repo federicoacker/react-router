@@ -18,7 +18,7 @@ function useFetch(URL) {
         return () => {
             setLoaded(false);
         }
-    },[]);
+    },[URL]);
 
     return {
         data,
