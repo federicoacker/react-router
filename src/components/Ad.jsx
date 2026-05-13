@@ -39,7 +39,7 @@ function Ad({starterIndex = 0}) {
     
     const adSrc = adSrcArray.find((element) => element.id === adSrcID).src;
     return (
-        <img key={adSrcID} src={adSrc} className="img-fluid" />
+        <img key={adSrcID} src={adSrc} className="ad-img mx-auto" />
     )
 }
 

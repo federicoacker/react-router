@@ -13,6 +13,9 @@
 body {
   color: white;
 }
+.ad-img{
+  width:0;
+}
 
 .ad-wrapper {
   width: 0;
@@ -26,27 +29,34 @@ body {
 }
 
 .main-header {
+  height: 10vh;
   position: sticky;
   top: 0;
   left: 0;
-  z-index:999;
+  z-index: 999;
 }
 
-.expanded-footer{
-  min-height:30vh;
-  position:absolute;
-  bottom:0;
-  z-index:100;
-  background-color:var(--bs-dark);
+.base-footer {
+  height: 10vh;
+}
+.expanded-footer {
+  min-height: 30vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  background-color: var(--bs-dark);
 }
 
-.card-text{
-  margin-bottom:0;
+.card-text {
+  margin-bottom: 0;
 }
-main {
-  max-height:80vh;
+
+.main-wrapper {
+  height: 100%;
+  max-height: 80vh;
 }
-.brand-logo{
+
+.brand-logo {
   max-width: 60px;
 }
 .hero-title {
@@ -59,8 +69,8 @@ main {
   object-position: 0 50%;
 }
 
-main{
-  width:100%;
+main {
+  width: 100%;
 }
 
 .product-img {
@@ -69,10 +79,10 @@ main{
   object-fit: contain;
 }
 .product-title {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  height:150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
 }
 .product-description {
   flex-basis: 150px;
@@ -84,35 +94,41 @@ main{
   height: 100%;
 }
 .product-category {
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
-.navlink-active-class{
-  border-radius:15px;
-  background-color:var(--bs-warning);
-  color:var(--bs-danger);
+.navlink-active-class {
+  border-radius: 15px;
+  background-color: var(--bs-warning);
+  color: var(--bs-danger);
 }
-.navling-pending-class{
-  border-radius:15px;
-  background-color:var(--bs-danger);
-  color:var(--bs-warning);
+.navling-pending-class {
+  border-radius: 15px;
+  background-color: var(--bs-danger);
+  color: var(--bs-warning);
 }
 
-.page-not-found{
+.page-not-found {
   font-size: 250px;
 }
 
-.arrow{
+.arrow {
   font-size: 60px;
 }
 
 @media screen and (min-width: 992px) {
   .ad-wrapper {
     width: 20%;
-    padding:0.5rem !important;
-    border: 1px solid white !important; 
+    padding: 0.5rem !important;
+    border: 1px solid white !important;
+    object-fit:contain;
   }
-  main{
+  .ad-img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+  }
+  main {
     width: 60%;
   }
 }

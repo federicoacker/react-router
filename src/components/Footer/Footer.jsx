@@ -7,11 +7,11 @@ function Footer() {
     return (
         <>
 
-            <footer className={clicked ? "border-top border-white expanded-footer" : "border-top border-white"}>
-                <div className="w-50 mx-auto d-flex flex-column">
+            <footer className={clicked ? "border-top border-white expanded-footer" : "border-top border-white base-footer"}>
+                <div className="w-75 mx-auto d-flex flex-column justify-content-center h-100">
                     <button className="btn btn-danger" onClick={() => setClicked(!clicked)}>Mostra Disclaimer</button>
                     {clicked &&
-                        <div className="disclaimer">
+                        <div className="disclaimer px-2">
                             <h3>⚠️ DISCLAIMER LEGALE (E SCARICABARILE UFFICIALE) ⚠️</h3>
                             <p>Acquistando su questo sito,
                                 accetti tacitamente di avere soldi da buttare
