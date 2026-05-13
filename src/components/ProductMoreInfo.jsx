@@ -1,9 +1,8 @@
 import { Card, Container } from "react-bootstrap"
-import { Link } from "react-router"
 function ProductMoreInfo({ title, image, description, price, category }) {
     return (
-        <Container>
-            <Card className="product-card" data-bs-theme="dark">
+        <Container className="flex-grow-1">
+            <Card className="product-card w-75 mx-auto" data-bs-theme="dark">
                 <Card.Header>
                     <Card.Title className="product-title">{title}</Card.Title>
                     <Card.Img src={image} className="product-img"></Card.Img>

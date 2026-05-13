@@ -4,7 +4,7 @@ import { Link } from "react-router";
 function Product({ title, description, price, category, image, id }) {
     return (
         <Col xs={12} md={6} lg={4}>
-            <Link className="text-decoration-none" to={`product/${id}`}>
+            <Link className="text-decoration-none" to={`${id}`}>
             <Card className="product-card" data-bs-theme="dark">
                 <Card.Header>
                     <Card.Title className="product-title">{title}</Card.Title>

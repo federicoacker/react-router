@@ -13,7 +13,7 @@ function App() {
         <Route index Component={Index}/>
         <Route path="about-us" Component={AboutUs} />
         <Route path="products" Component={Products} />
-        <Route path="products/product/:id" Component={ProductPage} />
+        <Route path="products/:id" Component={ProductPage} />
         <Route path="*" Component={PageNotFound} />
       </Route>
     </Routes>

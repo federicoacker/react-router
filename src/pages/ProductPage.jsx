@@ -10,6 +10,9 @@ function ProductPage() {
 
   const currentProduct = data.find(product => product.id === Number(params.id));
 
+  if(!currentProduct){
+    navigate("/404");
+  }
 
   const changeProduct = (direction) => {
     let navigateValue;
@@ -20,26 +23,26 @@ function ProductPage() {
       }
     }
     else if (direction === "backward") {
-      Number(params.id) + 1
+      navigateValue = Number(params.id) - 1;
       if (Number(params.id) === data[0].id) {
         navigateValue = data[data.length - 1].id;
       }
     }
-    navigate(`/products/product/${navigateValue}`);
+    navigate(`/products/${navigateValue}`);
   }
 
   return (
     (loaded && !loadingError) &&
     (
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center h-100">
         <button className="btn btn-primary" onClick={() => { changeProduct("backward") }}><i className="bi bi-arrow-bar-left arrow text-white"></i></button>
-        <div className="text-center">
+        <div className="text-center d-flex flex-column flex-grow-1 h-100 align-items-center">
           <Link className="text-decoration-none text-danger bg-warning px-4 py-2 rounded text-center d-inline-block "
             to="/products">
             Ritorna agli altri prodotti!</Link>
           <ProductMoreInfo {...currentProduct} />
         </div>
-        <button className="btn btn-primary" onClick={() => { changeProduct("forward") }}><i class="bi bi-arrow-bar-right arrow text-white"></i></button>
+        <button className="btn btn-primary" onClick={() => { changeProduct("forward") }}><i className="bi bi-arrow-bar-right arrow text-white"></i></button>
       </div>
     )
   )
