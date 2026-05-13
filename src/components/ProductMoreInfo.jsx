@@ -16,7 +16,7 @@ function ProductMoreInfo({ title, image, description, price, category }) {
                     <Card.Text>
                         {price} &euro;
                     </Card.Text>
-                    <Card.Text>
+                    <Card.Text className="product-category">
                         {category}
                     </Card.Text>
                 </Card.Footer>

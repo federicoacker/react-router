@@ -36,7 +36,7 @@ function ProductPage() {
     (
       <div className="d-flex align-items-center h-100">
         <button className="btn btn-primary" onClick={() => { changeProduct("backward") }}><i className="bi bi-arrow-bar-left arrow text-white"></i></button>
-        <div className="text-center d-flex flex-column flex-grow-1 h-100 align-items-center">
+        <div className="text-center d-flex flex-column flex-grow-1 h-100 align-items-center row-gap-5">
           <Link className="text-decoration-none text-danger bg-warning px-4 py-2 rounded text-center d-inline-block "
             to="/products">
             Ritorna agli altri prodotti!</Link>

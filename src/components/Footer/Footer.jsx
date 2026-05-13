@@ -2,10 +2,12 @@ import { useState } from "react"
 
 function Footer() {
     const [clicked, setClicked] = useState(false);
+
+
     return (
         <>
 
-            <footer className="border-top border-white">
+            <footer className={clicked ? "border-top border-white expanded-footer" : "border-top border-white"}>
                 <div className="w-50 mx-auto d-flex flex-column">
                     <button className="btn btn-danger" onClick={() => setClicked(!clicked)}>Mostra Disclaimer</button>
                     {clicked &&
