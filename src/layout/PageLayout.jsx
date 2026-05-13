@@ -12,8 +12,8 @@ function PageLayout() {
                     <div className="d-flex align-items-center ad-wrapper px-2 border rounded border-white">
                         <Ad starterIndex={1}/>
                     </div>
-                    <main className="flex-grow-1 px-3 py-4">
-                        <Outlet className="overflow-auto"/>
+                    <main className="flex-grow-1 px-3 py-4 overflow-auto">
+                        <Outlet/>
                     </main>
                     <div className="d-flex align-items-center ad-wrapper px-2 border rounded border-white">
                         <Ad starterIndex={0}/>
