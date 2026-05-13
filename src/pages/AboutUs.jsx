@@ -3,8 +3,8 @@ import { Card } from "react-bootstrap"
 function AboutUs() {
     return (
         <>
-            <section className="our-story d-flex flex-column align-items-center justify-content-center row-gap-4 py-4">
-                <Card data-bs-theme="dark" className="w-50">
+            <section className="our-story d-flex flex-column align-items-center justify-content-center row-gap-4">
+                <Card data-bs-theme="dark" className="w-75">
                     <Card.Header>
                         <Card.Title className="text-success">La Nostra (Triste) Storia</Card.Title>
                     </Card.Header>
@@ -22,7 +22,7 @@ function AboutUs() {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card data-bs-theme="dark" className="mb-4 w-50">
+                <Card data-bs-theme="dark" className="mb-4 w-75">
                     <Card.Header>
                         <Card.Title className="text-warning">I NOSTRI VALORI AZIENDALI (Non ne abbiamo, ma suonava bene)</Card.Title>
                     </Card.Header>
