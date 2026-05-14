@@ -10,7 +10,13 @@ function Products() {
             <Row className="row-gap-2">
                 {
                     (loaded && !loadingError) &&
-                    data.map(product => <Product key={product.id} {...product} max={data[data.length - 1].id} min={data[0].id} previous={data[data.indexOf(product)-1]?.id} next={data[data.indexOf(product)+1]?.id}/>)
+                    data.map(product => <Product 
+                        key={product.id} 
+                        {...product} 
+                        max={data[data.length - 1].id} 
+                        min={data[0].id} 
+                        previous={(!data[data.indexOf(product)-1]?.id) ? data[data.length-1].id : data[data.indexOf(product)-1]?.id} 
+                        next={!data[data.indexOf(product)+1]?.id ? data[0].id : data[data.indexOf(product)+1]?.id}/>)
                 }
             </Row>
         </Container>
